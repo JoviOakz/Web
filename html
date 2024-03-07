@@ -1,0 +1,149 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Jão Grandão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="name">
+            <h1 id="my_name">João Vitor de Carvalho</h1>
+            <ul class="navbar">
+                <li><a href="#about_me">Quem sou eu?</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article>
+        <img style="height: 700px; width: 100%; border-radius: 10px; border-style: solid; border-color: bisque;" src="./fota.jpeg" alt="">
+        <section>
+            <h1 id="about_me">
+                Sobre mim
+            </h1>
+
+            Oi, muito prazer, meu nome é João Vitor de Carvalho Mateus, tenho 19 anos, estou atualmente sofrendo com Web, sou aprendiz em Soluções Digitais na Bosch e é muito bacana.
+        </section>
+        <section>
+            <h1 id="portifolio">
+                Portifólio
+            </h1>
+        </section>
+        <section>
+            <h1 id="hobbies">
+                Hobbies
+            </h1>
+
+            Tenho alguns hobbies simples, gosto de jogos onde eu passo a maior parte do tempo me divertindo com meus amigos, gosto muito de sair com minha namorada, dormir, e atualmente um dos principais hobbies é estourar blão com masqueicos que atiram dardos.
+        </section>
+    </article>
+
+    <footer>
+        <h1 id="contact">
+            Contato
+        </h1>
+    </footer>
+</body>
+</html>
+
+========================================================================================================================================================================================================================================================================================
+
+CSS
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(15, 15, 15)
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+    display: flex;
+    position: fixed;
+}
+
+a{
+    color: bisque;
+    text-decoration-line: none;
+}
+
+article{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section{
+    color: bisque;
+    height: 400px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: bisque;
+   
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+.name{
+    width: 100%;
+    padding: 30px;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my_name{
+    font-size: 250%;
+    position: absolute;
+    left: 0;
+    padding: 30px;
+}
+
+.navbar{
+    font-size: larger;
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+#about_me{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    font-size: 200%;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+#portifolio{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    font-size: 200%;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+#hobbies{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    font-size: 200%;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
