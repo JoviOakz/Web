@@ -132,3 +132,80 @@ footer{
     border-style: solid;
     border-color: bisque;
 }
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Jão Grandão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="name">
+            <h1 id="my_name">João Vitor de Carvalho</h1>
+            <ul class="navbar">
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#portifolio">Portifolio</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article>
+        <section id="section_1">
+            <div>
+                <img id="photo_1" src="./diamond fota2.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div>
+                <div id="about_me">
+                    <h1 class="gradient_text">
+                        About me
+                    </h1>
+                </div>
+                <p>
+                    Oi, muito prazer, meu nome é João Vitor de Carvalho Mateus, tenho 19 anos, estou atualmente sofrendo com Web, sou aprendiz em Soluções Digitais na Bosch e é muito bacana.
+                </p>
+            </div>
+        </section>
+        <section id="portifolio">
+            <div>
+                <h1 class="gradient_text">
+                    Portifolio
+                </h1>
+            </div>
+        </section>
+        <section id="hobbies">
+            <div>
+                <h1 class="gradient_text">
+                    Hobbies
+                </h1>
+                <p>Tenho alguns hobbies simples, gosto de jogos onde eu passo a maior parte do tempo me divertindo com meus amigos, gosto muito de sair com minha namorada, dormir, e atualmente um dos principais hobbies é estourar blão com masqueicos que atiram dardos. </p>
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <div id="contact">
+            <h1 class="gradient_text">
+                Contact Me
+            </h1>
+        </div>
+        
+        <div id="contact">
+            <ul class="navbar" id="ul_separation" style="flex-direction: column; margin-top: 20px; gap: 13px;">
+                <li><a>E-mail: </a><a href="#">joao.mateussdc@gmail.com</a></li>
+                <li><a>Phone: (41) 99641-9030</a></li>
+                <li><a href="https://www.instagram.com/jovioakz_">Instagram</a></li>
+                <li><a href="https://github.com/JoviOakz">Github</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
