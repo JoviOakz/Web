@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
+a{
+    color: bisque;
+    text-decoration-line: none;
+}
+
+article{
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section{
+    width: 90%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>div{
+    width: 90%;
+    color: bisque;
+    height: 400px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: bisque;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+.name{
+    width: 100%;
+    padding: 30px;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my_name{
+    width: 400px;
+    background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
+    background-clip: text;
+    color: transparent;
+    font-size: 250%;
+    position: absolute;
+    left: 0;
+    padding: 30px;
+}
+
+.navbar{
+    font-size: larger;
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+
+
+#photo_1{
+    height: 400px;
+    filter: drop-shadow(10px 7px 10px black);
+}
+
+#about_me{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    font-size: 200%;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+#portifolio>div{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    font-size: 200%;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+#hobbies>div{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    font-size: 200%;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+.gradient_text{
+    width: 175px;
+    background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
+    background-clip: text;
+    color: transparent;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+}
+
+.mur{
+    color: bisque;
+    height: 400px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: bisque;
+}
