@@ -5,7 +5,7 @@ HTML
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Jão Grandão</title>
+    <title>Portifolio João Carvalho</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@ HTML
             <h1 id="my_name">João Vitor de Carvalho</h1>
             <ul class="navbar">
                 <li><a href="#about_me">About me</a></li>
-                <li><a href="#portifolio">Portifolio</a></li>
+                <li><a href="#portifolio">Workplace</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -23,7 +23,12 @@ HTML
 
     <article>
         <section id="section_1">
-            <h1>Alo</h1>
+            <div id="initial">
+                <h1 class="gradient_text">Digital Solutions Apprentice</h1>
+                <ul class="navbar">
+                    <li id="excuse"><a href="#about_me">About me</a></li>
+                </ul>
+            </div>
             <img id="photo_1" src="./diamond fota2.png" alt="">
         </section>
         <section>
@@ -33,7 +38,10 @@ HTML
                 </h1>
             </div>
 
-            Oi, muito prazer, meu nome é João Vitor de Carvalho Mateus, tenho 19 anos, estou atualmente sofrendo com Web, sou aprendiz em Soluções Digitais na Bosch e é muito bacana.
+            <div id="div_aboutme">
+                Olá, me chamo João Vitor de Carvalho Mateus, atualmente ando com a vida muito corrida, sou jovem aprendiz, estou trabalhando/estudando na empresa multinacional Bosch, 
+                <img id="photo_2" src="./eu2_b.png" alt="">
+            </div>
         </section>
         <section>
             <div id="portifolio">
@@ -48,8 +56,9 @@ HTML
                     Hobbies
                 </h1>
             </div>
-            
-            Tenho alguns hobbies simples, gosto de jogos onde eu passo a maior parte do tempo me divertindo com meus amigos, gosto muito de sair com minha namorada, dormir, e atualmente um dos principais hobbies é estourar blão com masqueicos que atiram dardos.  
+            <p>
+                Tenho alguns hobbies simples, gosto de jogos onde eu passo a maior parte do tempo me divertindo com meus amigos, gosto muito de sair com minha namorada, dormir, e atualmente um dos principais hobbies é estourar blão com masqueicos que atiram dardos.
+            </p>
         </section>
     </article>
 
@@ -61,13 +70,32 @@ HTML
         </div>
         
         <div id="contact">
-            <ul class="navbar" id="ul_separation" style="flex-direction: column; margin-top: 20px; gap: 13px;">
-                <li><a>E-mail: </a><a href="#">joao.mateussdc@gmail.com</a></li>
-                <li><a>Phone: (41) 99641-9030</a></li>
-                <li><a href="https://www.instagram.com/jovioakz_">Instagram</a></li>
-                <li><a href="https://github.com/JoviOakz">Github</a></li>
-            </ul>
+            <div id="form">
+                <div class="form1">
+                    <h3>Nome:</h3>
+                    <h3>Email:</h3>
+                </div>
+    
+                <form class="form2" method="POST" action="index.php">
+                    <input type="text" required>
+                    <input type="email" required>
+                    <label for="textarea"></label>
+                    <textarea placeholder="Digite aqui sua mensagem." cols="30" rows="6" required></textarea> 
+                    <button id="button">Send</button>
+                </form>
+            </div>
+
+            <div>
+                <img src="./git.png" alt="">
+                <ul class="navbar" style="flex-direction: column; margin-top: 20px; gap: 13px;">
+                    <li><a>My E-mail: </a><a>joao.mateussdc@gmail.com</a></li>
+                    <li><a>Phone: (41) 99641-9030</a></li>
+                    <li><a href="https://www.instagram.com/jovioakz_">Instagram</a></li>
+                    <li><a href="https://github.com/JoviOakz">Github</a></li>
+                </ul>
+            </div>
         </div>
+
     </footer>
 </body>
 </html>
@@ -75,6 +103,8 @@ HTML
 ========================================================================================================================================================================================================================================================================================
 
 CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 *{
     margin: 0;
@@ -84,6 +114,9 @@ CSS
 
 body{
     background-color: rgb(15, 15, 15);
+    background-image: url("./fundo-escuro-de-hexagonos-minimos_79603-1455.avif");
+    background-blend-mode: difference;
+    font-family: "Prata", serif;
 }
 
 header{
@@ -100,6 +133,10 @@ a{
     text-decoration-line: none;
 }
 
+a:hover{
+    color: rgb(177, 98, 9);
+}
+
 article{
     padding: 20px;
     display: flex;
@@ -112,13 +149,11 @@ section{
     height: 400px;
     background-color: rgb(50, 50, 50);
     border-radius: 10px;
-    border-style: solid;
-    border-color: bisque;
 }
 
 footer{
     width: 100%;
-    height: 200px;
+    height: 30vh;
     background: linear-gradient(to right, black, rgb(70, 70, 70));
 }
 
@@ -136,7 +171,7 @@ footer{
     background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
     background-clip: text;
     color: transparent;
-    font-size: 250%;
+    font-size: 35px;
     position: absolute;
     left: 0;
     padding: 30px;
@@ -149,13 +184,30 @@ footer{
     list-style: none;
 }
 
+#initial{
+    position: relative;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#excuse{
+    background-color: grey;
+    padding: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(18, 18, 18);
+    filter: drop-shadow(10px 7px 10px black);
+}
+
 #section_1{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    left: 325px;
-    width: 60%;
+    left: 450px;
+    width: 50%;
     height: 650px;
 }
 
@@ -167,11 +219,24 @@ footer{
     filter: drop-shadow(10px 7px 10px black);
 }
 
+#div_aboutme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#photo_2{
+    position: relative;
+    top: 10px;
+    right: 20px;
+    height: 300px;
+    border-radius: 15px;
+}
+
 #about_me{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 20px;
-    font-size: 200%;
     background: linear-gradient(to right, black, rgb(70, 70, 70));
 }
 
@@ -179,7 +244,6 @@ footer{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 20px;
-    font-size: 200%;
     background: linear-gradient(to right, black, rgb(70, 70, 70));
 }
 
@@ -187,12 +251,12 @@ footer{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 20px;
-    font-size: 200%;
     background: linear-gradient(to right, black, rgb(70, 70, 70));
 }
 
 .gradient_text{
     width: 175px;
+    font-size: 30px;
     background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
     background-clip: text;
     color: transparent;
@@ -200,5 +264,53 @@ footer{
 
 #contact{
     display: flex;
+    justify-content: space-around;
+}
+
+#form{
+    display: flex;
     justify-content: center;
+    width: 25%;
+}
+
+.form1{
+    color: rgb(196, 155, 105);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.form2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    gap: 12px;
+}
+
+#button{
+    width: 20%;
+    background-color: grey;
+    padding: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(18, 18, 18);
+    filter: drop-shadow(10px 7px 10px black);
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+    
+}
+
+/* 1024px - 1200px = desktop menores */
+@media (min-width: 1024px) {
+    
+}
+
+/* 1200 e + = telas maiores, tvs */
+@media (min-width: 1200px) {
+
 }
