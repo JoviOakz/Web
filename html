@@ -41,9 +41,9 @@ HTML
 
             <div id="divs_sustent">
                 <p>
-                        Olá, me chamo João Vitor de Carvalho Mateus, atualmente ando com a vida muito agitada, sou jovem aprendiz, estou trabalhando/estudando na empresa multinacional Bosch, hoje em dia tenho 19 anos sou libriano e sou um apreciador de tecnologia no geral, por conta disso eu me apaixonei por programação logo que entrei à faculdade, começando por engenharia da computação, mas hoje me transferi para engenharia de software, onde melhor me encaixo.
+                    Hello, my name is João Vitor de Carvalho Mateus, i currently have a very busy life, i am a young apprentice, i am working/studying at the multinational company Bosch, nowadays i am 19 years old, i am Librian and i like a lot technology in general, so... that's why i fell in love with programming as soon as i entered college, starting with computer engineering, but today i transferred to software engineering, where i fit in better.
                 </p>
-                <img id="photo_2" src="./eu2_b.png" alt="">
+                <img id="photo_2" src="./eu3.jpeg" alt="">
             </div>
         </section>
 
@@ -55,10 +55,10 @@ HTML
             </div>
 
             <div id="divs_sustent">
+                <img id="photo_3" src="./turma.jpeg" alt="">
                 <p>
-                    Meu ambiente de trabalho é algo onde me impressiono até hoje, desde que entrei aqui nesta empresa, venho criando novas relações, amizades e também muito conhecimento, de fato 
+                    My work environment is something that impresses me until today, since i joined this company, i have been creating new friendships and also a lot of knowledge, in fact it is a very incredible environment to work in, in just a few months of work i have already acquired a lot of knowledge, including: knowledge of programming languages like C, C++, Java, Python, HTML, CSS, Excel, PowerBI and more.
                 </p>
-                <img id="photo_3" src="./eu2_b.png" alt="">
             </div>
         </section>
 
@@ -70,10 +70,11 @@ HTML
             </div>
 
             <div id="divs_sustent">
-                <p>
-                    Tenho alguns hobbies simples, gosto de jogos onde eu passo a maior parte do tempo me divertindo com meus amigos, gosto muito de sair com minha namorada, dormir, e atualmente um dos principais hobbies é estourar blão com masqueicos que atiram dardos.
-                </p>
                 <img id="photo_4" src="./eu2_b.png" alt="">
+                <p>
+                    Talking a little more about myself, i am a shy, reserved person, but i let myself go with my friends and also really like being with them, i enjoy some hobbies and entertainment during my free moments, i love playing video games, i love going out and enjoying my girlfriend, and spend a good weekend watching movies with my family.
+                </p>
+                <img id="photo_5" src="./turma.jpeg" alt="">
             </div>
         </section>
     </article>
@@ -101,9 +102,14 @@ HTML
                 </form>
             </div>
 
-            <div>
-                <img src="./git.png" alt="">
-                <ul class="navbar" style="flex-direction: column; margin-top: 20px; gap: 13px;">
+            <div id="correct_form">
+                <ul class="navbar" id="form3">
+                    <img id="social_img" src="./gmail_png.png" alt="">
+                    <img id="social_img" src="./phone_png.png" alt="">
+                    <img id="social_img" src="./insta2_png.png" alt="">
+                    <img id="social_img" src="./git2_png.png" alt="">
+                </ul>
+                <ul class="navbar" id="form4">
                     <li style="color: bisque;">My E-mail: joao.mateussdc@gmail.com</li>
                     <li style="color: bisque;">Phone: (41) 99641-9030</li>
                     <li><a href="https://www.instagram.com/jovioakz_">Instagram</a></li>
@@ -111,7 +117,6 @@ HTML
                 </ul>
             </div>
         </div>
-
     </footer>
 </body>
 </html>
@@ -156,15 +161,22 @@ a:hover{
 article{
     padding: 20px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
 
 section{
+    width: 80%;
     color: bisque;
     height: 400px;
     background-color: rgb(50, 50, 50);
     border-radius: 10px;
+}
+
+p{
+    font-size: larger;
+    padding: 60px;
 }
 
 footer{
@@ -222,7 +234,6 @@ footer{
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    left: 450px;
     width: 50%;
     height: 650px;
 }
@@ -252,12 +263,20 @@ footer{
 #photo_3{
     position: relative;
     top: 10px;
-    right: 20px;
+    left: 20px;
     height: 300px;
     border-radius: 15px;
 }
 
 #photo_4{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#photo_5{
     position: relative;
     top: 10px;
     right: 20px;
@@ -297,6 +316,14 @@ footer{
 #contact{
     display: flex;
     justify-content: space-around;
+    position: relative;
+    top: 10px;
+}
+
+#social_img{
+    height: 40px;
+    background-color: bisque;
+    border-radius: 50%;
 }
 
 #form{
@@ -312,6 +339,8 @@ footer{
     margin-top: 20px;
     gap: 10px;
     margin-right: 15px;
+    position: relative;
+    left: 80px;
 }
 
 .form2{
@@ -320,6 +349,29 @@ footer{
     flex-direction: column;
     margin-top: 28px;
     gap: 12px;
+    position: relative;
+    left: 80px;
+}
+
+#correct_form{
+    display: flex;
+    gap: 20px;
+}
+
+#form3{
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 13px;
+    position: relative;
+    right: 80px;
+}
+
+#form4{
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
+    position: relative;
+    right: 80px;
 }
 
 #button{
@@ -334,7 +386,9 @@ footer{
 
 /* 768px - 1024px = telas menores, laptops */
 @media (min-width: 768px) {
-    
+    #my_name{
+        font-size: 22px;
+    }
 }
 
 /* 1024px - 1200px = desktop menores */
@@ -344,5 +398,7 @@ footer{
 
 /* 1200 e + = telas maiores, tvs */
 @media (min-width: 1200px) {
-
+    #my_name{
+        font-size: 35px;
+    }
 }
