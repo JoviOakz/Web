@@ -14,7 +14,7 @@ HTML
             <h1 id="my_name">João Vitor de Carvalho</h1>
             <ul class="navbar">
                 <li><a href="#about_me">About me</a></li>
-                <li><a href="#portifolio">Workplace</a></li>
+                <li><a href="#workplace">Workplace</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,6 +31,7 @@ HTML
             </div>
             <img id="photo_1" src="./diamond fota2.png" alt="">
         </section>
+
         <section>
             <div id="about_me">
                 <h1 class="gradient_text">
@@ -38,27 +39,42 @@ HTML
                 </h1>
             </div>
 
-            <div id="div_aboutme">
-                Olá, me chamo João Vitor de Carvalho Mateus, atualmente ando com a vida muito corrida, sou jovem aprendiz, estou trabalhando/estudando na empresa multinacional Bosch, 
+            <div id="divs_sustent">
+                <p>
+                        Olá, me chamo João Vitor de Carvalho Mateus, atualmente ando com a vida muito agitada, sou jovem aprendiz, estou trabalhando/estudando na empresa multinacional Bosch, hoje em dia tenho 19 anos sou libriano e sou um apreciador de tecnologia no geral, por conta disso eu me apaixonei por programação logo que entrei à faculdade, começando por engenharia da computação, mas hoje me transferi para engenharia de software, onde melhor me encaixo.
+                </p>
                 <img id="photo_2" src="./eu2_b.png" alt="">
             </div>
         </section>
+
         <section>
-            <div id="portifolio">
+            <div id="workplace">
                 <h1 class="gradient_text">
-                    Portifolio
+                    Workplace
                 </h1>
             </div>
+
+            <div id="divs_sustent">
+                <p>
+                    Meu ambiente de trabalho é algo onde me impressiono até hoje, desde que entrei aqui nesta empresa, venho criando novas relações, amizades e também muito conhecimento, de fato 
+                </p>
+                <img id="photo_3" src="./eu2_b.png" alt="">
+            </div>
         </section>
+
         <section>
             <div id="hobbies">
                 <h1 class="gradient_text">
                     Hobbies
                 </h1>
             </div>
-            <p>
-                Tenho alguns hobbies simples, gosto de jogos onde eu passo a maior parte do tempo me divertindo com meus amigos, gosto muito de sair com minha namorada, dormir, e atualmente um dos principais hobbies é estourar blão com masqueicos que atiram dardos.
-            </p>
+
+            <div id="divs_sustent">
+                <p>
+                    Tenho alguns hobbies simples, gosto de jogos onde eu passo a maior parte do tempo me divertindo com meus amigos, gosto muito de sair com minha namorada, dormir, e atualmente um dos principais hobbies é estourar blão com masqueicos que atiram dardos.
+                </p>
+                <img id="photo_4" src="./eu2_b.png" alt="">
+            </div>
         </section>
     </article>
 
@@ -88,8 +104,8 @@ HTML
             <div>
                 <img src="./git.png" alt="">
                 <ul class="navbar" style="flex-direction: column; margin-top: 20px; gap: 13px;">
-                    <li><a>My E-mail: </a><a>joao.mateussdc@gmail.com</a></li>
-                    <li><a>Phone: (41) 99641-9030</a></li>
+                    <li style="color: bisque;">My E-mail: joao.mateussdc@gmail.com</li>
+                    <li style="color: bisque;">Phone: (41) 99641-9030</li>
                     <li><a href="https://www.instagram.com/jovioakz_">Instagram</a></li>
                     <li><a href="https://github.com/JoviOakz">Github</a></li>
                 </ul>
@@ -219,13 +235,29 @@ footer{
     filter: drop-shadow(10px 7px 10px black);
 }
 
-#div_aboutme{
+#divs_sustent{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #photo_2{
+    position: relative;
+    top: 10px;
+    right: 20px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#photo_3{
+    position: relative;
+    top: 10px;
+    right: 20px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#photo_4{
     position: relative;
     top: 10px;
     right: 20px;
@@ -240,7 +272,7 @@ footer{
     background: linear-gradient(to right, black, rgb(70, 70, 70));
 }
 
-#portifolio{
+#workplace{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 20px;
