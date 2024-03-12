@@ -1,0 +1,444 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio João Carvalho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="name">
+            <h1 id="my_name">João Vitor de Carvalho</h1>
+            <ul class="navbar">
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#workplace">Workplace</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article>
+        <section id="section_1">
+            <div id="initial">
+                <h1 class="gradient_text">Digital Solutions Apprentice</h1>
+                <ul class="navbar">
+                    <li id="excuse"><a href="#about_me">About me</a></li>
+                </ul>
+            </div>
+            <img id="photo_1" src="./diamond_photo.png" alt="">
+        </section>
+
+        <section>
+            <div id="about_me">
+                <h1 class="gradient_text">
+                    About me
+                </h1>
+            </div>
+
+            <div id="divs_sustent">
+                <p>
+                    Hello, my name is João Vitor de Carvalho Mateus, i currently have a very busy life, i am a young apprentice, i am working/studying at the multinational company Bosch, nowadays i am 19 years old, i am Librian and i like a lot technology in general, so... that's why i fell in love with programming as soon as i entered college, starting with computer engineering, but today i transferred to software engineering, where i fit in better.
+                </p>
+                <img id="photo_2" src="./eu1.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div id="workplace">
+                <h1 class="gradient_text">
+                    Workplace
+                </h1>
+            </div>
+
+            <div id="divs_sustent">
+                <img id="photo_3" src="./turma.jpg" alt="">
+                <p>
+                    My work environment is something that impresses me until today, since i joined this company, i have been creating new friendships and also a lot of knowledge, in fact it is a very incredible environment to work in, in just a few months of work i have already acquired a lot of knowledge, including: knowledge of programming languages like C, C++, Java, Python, HTML, CSS, Excel, PowerBI and more.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div id="hobbies">
+                <h1 class="gradient_text">
+                    Hobbies
+                </h1>
+            </div>
+
+            <div id="divs_sustent">
+                <img id="photo_4" src="./eu2.jpg" alt="">
+                <p>
+                    Talking a little more about myself, i am a shy, reserved person, but i let myself go with my friends and also really like being with them, i enjoy some hobbies and entertainment during my free moments, i love playing video games, i love going out and enjoying my girlfriend, and spend a good weekend watching movies with my family.
+                </p>
+                <img id="photo_5" src="./eu2.jpg" alt="">
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <div id="contact">
+            <h1 class="gradient_text">
+                Contact Me
+            </h1>
+        </div>
+        
+        <div id="contact">
+            <div id="form">
+                <div class="form1">
+                    <h3>Nome:</h3>
+                    <h3>Email:</h3>
+                </div>
+    
+                <form class="form2" method="POST" action="index.php">
+                    <input type="text" required>
+                    <input type="email" required>
+                    <label for="textarea"></label>
+                    <textarea placeholder="Digite aqui sua mensagem." cols="30" rows="6" required></textarea> 
+                    <button id="button">Send</button>
+                </form>
+            </div>
+
+            <div id="correct_form">
+                <ul class="navbar" id="form3">
+                    <img id="social_img" src="./gmail_icon.png" alt="">
+                    <img id="social_img" src="./phone_icon.png" alt="">
+                    <img id="social_img" src="./insta_icon.png" alt="">
+                    <img id="social_img" src="./git_icon.png" alt="">
+                </ul>
+                <ul class="navbar" id="form4">
+                    <li style="color: bisque;">My E-mail: joao.mateussdc@gmail.com</li>
+                    <li style="color: bisque;">Phone: (41) 99641-9030</li>
+                    <li><a href="https://www.instagram.com/jovioakz_">Instagram</a></li>
+                    <li><a href="https://github.com/JoviOakz">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+=================================================================================================================================================================
+
+CSS
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+    background-image: url("./fundo.jpg");
+    background-blend-mode: difference;
+    font-family: "Prata", serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
+a{
+    color: bisque;
+    text-decoration-line: none;
+}
+
+a:hover{
+    color: rgb(177, 98, 9);
+}
+
+article{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section{
+    width: 80%;
+    color: bisque;
+    height: 400px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+}
+
+p{
+    font-size: larger;
+    padding: 60px;
+}
+
+footer{
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to bottom, black, rgb(70, 70, 70));
+}
+
+.name{
+    width: 100%;
+    padding: 30px;
+    color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#my_name{
+    width: 400px;
+    background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    padding: 30px;
+}
+
+.navbar{
+    font-size: larger;
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+#initial{
+    position: relative;
+    display: flex;
+    right: 100px;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#excuse{
+    background-color: grey;
+    padding: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(18, 18, 18);
+    filter: drop-shadow(10px 7px 10px black);
+}
+
+#section_1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 60%;
+    height: 650px;
+}
+
+#photo_1{
+    height: 450px;
+    position: relative;
+    right: 60px;
+    top: 35px;
+    filter: drop-shadow(10px 7px 10px black);
+}
+
+#divs_sustent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#photo_2{
+    position: relative;
+    top: 10px;
+    right: 20px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#photo_3{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 275px;
+    border-radius: 15px;
+}
+
+#photo_4{
+    position: relative;
+    bottom: 5px;
+    left: 20px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+#photo_5{
+    position: relative;
+    bottom: 5px;
+    right: 20px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+#about_me{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+#workplace{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+#hobbies{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to right, black, rgb(70, 70, 70));
+}
+
+.gradient_text{
+    width: 175px;
+    font-size: 30px;
+    background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
+    background-clip: text;
+    color: transparent;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+}
+
+#social_img{
+    height: 40px;
+    background-color: bisque;
+    border-radius: 50%;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+.form1{
+    color: rgb(196, 155, 105);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    margin-right: 15px;
+    position: relative;
+    left: 80px;
+}
+
+.form2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    gap: 12px;
+    position: relative;
+    left: 80px;
+}
+
+#correct_form{
+    display: flex;
+    gap: 20px;
+}
+
+#form3{
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 13px;
+    position: relative;
+    right: 80px;
+}
+
+#form4{
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
+    position: relative;
+    right: 80px;
+}
+
+#button{
+    width: 20%;
+    background-color: grey;
+    padding: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(18, 18, 18);
+    filter: drop-shadow(10px 7px 10px black);
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px) {
+    #my_name{
+        font-size: 32px;
+        position: relative;
+        right: 30px;
+    }
+    
+    section{
+        height: 600px;
+        position: relative;
+        left: 100px;
+        width: 100%;
+    }
+
+    .navbar{
+        gap: 32px;
+        position: relative;
+        right: 30px;
+    }
+
+    .navbar li{
+        width: 95px;
+    }
+
+    #section_1{
+        width: 85%;
+        left: 100px;
+    }
+
+    #initial{
+        left: 1px;
+    }
+
+    #excuse{
+        position: relative;
+        left: 30px;
+    }
+
+    #photo_1{
+        height: 50%;
+        left: 1px;
+    }
+
+    #photo_2{
+        top: 60px;
+    }
+}
+
+/* 1024px - 1200px = desktop menores */
+@media (min-width: 1024px) {
+    
+}
+
+/* 1200 e + = telas maiores, tvs */
+@media (min-width: 1200px) {
+    #my_name{
+        font-size: 35px;
+    }
+}
