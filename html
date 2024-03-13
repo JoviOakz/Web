@@ -70,17 +70,17 @@ HTML
             </div>
 
             <div id="divs_sustent">
-                <img id="photo_4" src="./eu2.jpg" alt="">
+                <img id="photo_4" src="./eu3.jpg" alt="">
                 <p>
                     Talking a little more about myself, i am a shy, reserved person, but i let myself go with my friends and also really like being with them, i enjoy some hobbies and entertainment during my free moments, i love playing video games, i love going out and enjoying my girlfriend, and spend a good weekend watching movies with my family.
                 </p>
-                <img id="photo_5" src="./eu2.jpg" alt="">
+                <img id="photo_5" src="./familia.jpg" alt="">
             </div>
         </section>
     </article>
 
     <footer>
-        <div id="contact">
+        <div style="display: flex; justify-content: center;" id="contact">
             <h1 class="gradient_text">
                 Contact Me
             </h1>
@@ -109,7 +109,7 @@ HTML
                     <img id="social_img" src="./insta_icon.png" alt="">
                     <img id="social_img" src="./git_icon.png" alt="">
                 </ul>
-                <ul class="navbar" id="form4">
+                <ul class="last" id="form4">
                     <li style="color: bisque;">My E-mail: <a href="mailto:joao.mateussdc@gmail.com" target="_blank">joao.mateussdc@gmail.com</a></li>
                     <li style="color: bisque;">Phone: <a href="https://wa.me/5541996419030" target="_blank">(41) 99641-9030</a></li>
                     <li><a href="https://www.instagram.com/jovioakz_" target="_blank">Instagram</a></li>
@@ -135,7 +135,7 @@ CSS
 
 body{
     background-color: rgb(15, 15, 15);
-    background-image: url("./fundo-escuro-de-hexagonos-minimos_79603-1455.avif");
+    background-image: url("./fundo.jpg");
     background-blend-mode: difference;
     font-family: "Prata", serif;
 }
@@ -181,8 +181,8 @@ p{
 
 footer{
     width: 100%;
-    height: 30vh;
-    background: linear-gradient(to right, black, rgb(70, 70, 70));
+    height: 40vh;
+    background: linear-gradient(to bottom, black, rgb(70, 70, 70));
 }
 
 .name{
@@ -190,7 +190,7 @@ footer{
     padding: 30px;
     color: bisque;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -200,8 +200,6 @@ footer{
     background-clip: text;
     color: transparent;
     font-size: 35px;
-    position: absolute;
-    left: 0;
     padding: 30px;
 }
 
@@ -214,8 +212,8 @@ footer{
 
 #initial{
     position: relative;
-    left: 40px;
     display: flex;
+    right: 100px;
     flex-direction: column;
     gap: 80px;
 }
@@ -234,15 +232,15 @@ footer{
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    width: 50%;
+    width: 60%;
     height: 650px;
 }
 
 #photo_1{
-    height: 550px;
+    height: 450px;
     position: relative;
+    right: 60px;
     top: 35px;
-    left: 50px;
     filter: drop-shadow(10px 7px 10px black);
 }
 
@@ -262,25 +260,25 @@ footer{
 
 #photo_3{
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 20px;
-    height: 300px;
+    height: 275px;
     border-radius: 15px;
 }
 
 #photo_4{
     position: relative;
-    top: 10px;
+    bottom: 5px;
     left: 20px;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
 #photo_5{
     position: relative;
-    top: 10px;
+    bottom: 5px;
     right: 20px;
-    height: 300px;
+    height: 250px;
     border-radius: 15px;
 }
 
@@ -384,21 +382,454 @@ footer{
     filter: drop-shadow(10px 7px 10px black);
 }
 
+.last{
+    font-size: larger;
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+.last li{
+    font-size: 18px;
+    padding: 5px;
+}
+
 /* 768px - 1024px = telas menores, laptops */
 @media (min-width: 768px) {
+    .name{
+        padding: 20px;
+    }
+
+    .navbar li{
+        width: 92px;
+        font-size: 16px;
+    }
+
+    .navbar{
+        gap: 10px;
+    }
+
     #my_name{
-        font-size: 22px;
+        font-size: 19px;
+    }
+
+    #photo_1{
+        left: 1px;
+        height: 300px;
+    }
+
+    section{
+        width: 100%;
+        height: 720px;
+    }
+
+    #section_1{
+        width: 80%;
+    }
+
+    #initial{
+        left: 1px;
+    }
+
+    #photo_3{
+        margin-bottom: 50px;
+    }
+
+    #divs_sustent{
+        flex-direction: column;
+    }
+
+    #photo_4{
+        margin-top: 20px;
+    }
+
+    #photo_5{
+        display: none;
+    }
+
+    footer{
+        height: 290px;
+    }
+
+    #social_img{
+        height: 35px;
+    }
+
+    #form4{
+        font-size: 20px;
+        gap: 15px;
+    }
+
+    .form2{
+        bottom: 2px;
+    }
+
+    #contact{
+        gap: 300px;
+    }
+
+    .last{
+        font-size: larger;
+        display: flex;
+        gap: 60px;
+        list-style: none;
+    }
+    
+    .last li{
+        font-size: 18px;
+        padding: 5px;
     }
 }
 
 /* 1024px - 1200px = desktop menores */
 @media (min-width: 1024px) {
+    .navbar li{
+        width: 92px;
+    }
+
+    #my_name{
+        font-size: 30px;
+    }
+
+    #initial{
+        left: 1px;
+    }
+
+    #photo_1{
+        height: 300px;
+        left: 1px;
+    }
+
+    section{
+        height: 420px;
+    }
+
+    #section_1{
+        width: 70%;
+        height: 500px;
+    }
+
+    #photo_3{
+        margin-bottom: 80px;
+    }
+
+    #photo_4{
+        height: 200px;
+    }
+
+    #photo_5{
+        height: 200px;
+        display: unset;
+    }
+
+    #social_img{
+        height: 35px;
+    }
+
+    #divs_sustent{
+        flex-direction: unset;
+    }
+
+    #form4{
+        font-size: 15px;
+        gap: 15px;
+    }
+
+    .form2{
+        bottom: 2px;
+    }
+
+    footer{
+        height: 290px;
+    }
+
+    #contact{
+        justify-content: space-between;
+    }
+
+    .last{
+        font-size: larger;
+        display: flex;
+        gap: 60px;
+        list-style: none;
+    }
     
+    .last li{
+        font-size: 18px;
+        padding: 5px;
+    }
 }
 
 /* 1200 e + = telas maiores, tvs */
 @media (min-width: 1200px) {
+    @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color: rgb(15, 15, 15);
+        background-image: url("./fundo.jpg");
+        background-blend-mode: difference;
+        font-family: "Prata", serif;
+    }
+
+    header{
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to right, black, rgb(70, 70, 70));
+        display: flex;
+        position: fixed;
+        z-index: 999;
+    }
+
+    a{
+        color: bisque;
+        text-decoration-line: none;
+    }
+
+    a:hover{
+        color: rgb(177, 98, 9);
+    }
+
+    article{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section{
+        width: 80%;
+        color: bisque;
+        height: 400px;
+        background-color: rgb(50, 50, 50);
+        border-radius: 10px;
+    }
+
+    p{
+        font-size: larger;
+        padding: 60px;
+    }
+
+    footer{
+        width: 100%;
+        height: 40vh;
+        background: linear-gradient(to bottom, black, rgb(70, 70, 70));
+    }
+
+    .name{
+        width: 100%;
+        padding: 30px;
+        color: bisque;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     #my_name{
+        width: 400px;
+        background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
+        background-clip: text;
+        color: transparent;
         font-size: 35px;
+        padding: 30px;
+    }
+
+    .navbar{
+        font-size: larger;
+        display: flex;
+        gap: 60px;
+        list-style: none;
+    }
+
+    .last{
+        font-size: larger;
+        display: flex;
+        gap: 60px;
+        list-style: none;
+    }
+
+    .last li{
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    #initial{
+        position: relative;
+        display: flex;
+        right: 100px;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    #excuse{
+        background-color: grey;
+        padding: 3px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgb(18, 18, 18);
+        filter: drop-shadow(10px 7px 10px black);
+    }
+
+    #section_1{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        width: 60%;
+        height: 650px;
+    }
+
+    #photo_1{
+        height: 450px;
+        position: relative;
+        right: 60px;
+        top: 35px;
+        filter: drop-shadow(10px 7px 10px black);
+    }
+
+    #divs_sustent{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: unset;
+        align-items: center;
+    }
+
+    #photo_2{
+        position: relative;
+        top: 10px;
+        right: 20px;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    #photo_3{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        height: 275px;
+        border-radius: 15px;
+    }
+
+    #photo_4{
+        position: relative;
+        bottom: 5px;
+        left: 20px;
+        height: 250px;
+        border-radius: 15px;
+    }
+
+    #photo_5{
+        position: relative;
+        bottom: 5px;
+        right: 20px;
+        height: 250px;
+        border-radius: 15px;
+        display: unset;
+    }
+
+    #about_me{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px;
+        background: linear-gradient(to right, black, rgb(70, 70, 70));
+    }
+
+    #workplace{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px;
+        background: linear-gradient(to right, black, rgb(70, 70, 70));
+    }
+
+    #hobbies{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px;
+        background: linear-gradient(to right, black, rgb(70, 70, 70));
+    }
+
+    .gradient_text{
+        width: 175px;
+        font-size: 30px;
+        background-image: linear-gradient(to right, rgb(196, 155, 105), rgb(177, 98, 9));
+        background-clip: text;
+        color: transparent;
+    }
+
+    #contact{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 10px;
+    }
+
+    #social_img{
+        height: 40px;
+        background-color: bisque;
+        border-radius: 50%;
+    }
+
+    #form{
+        display: flex;
+        justify-content: center;
+        width: 25%;
+    }
+
+    .form1{
+        color: rgb(196, 155, 105);
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+        margin-right: 15px;
+        position: relative;
+        left: 80px;
+    }
+
+    .form2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 28px;
+        gap: 12px;
+        position: relative;
+        left: 80px;
+    }
+
+    #correct_form{
+        display: flex;
+        gap: 20px;
+    }
+
+    #form3{
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 13px;
+        position: relative;
+        right: 80px;
+    }
+
+    #form4{
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 18px;
+        position: relative;
+        right: 80px;
+    }
+
+    #button{
+        width: 20%;
+        background-color: grey;
+        padding: 3px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgb(18, 18, 18);
+        filter: drop-shadow(10px 7px 10px black);
     }
 }
